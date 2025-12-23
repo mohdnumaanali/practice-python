@@ -5,4 +5,4 @@ for value in [9, 41, 12, 3, 74, 15] :
     count = count + 1
     sum = sum + value
     print(count, sum, value)
-print('After', count, sum, sum / count)
+print('After', count, sum, sum / count)                 #aur ek baat ( is . is not )bhi ek tarah ke operator hai for , while , if , else , elif jaisa

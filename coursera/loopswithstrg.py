@@ -4,3 +4,4 @@ for friend in friends:                                                          
 
 name = ("ali")
 print("happy new year ", name)                                                  #normal method 
+
