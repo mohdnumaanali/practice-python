@@ -9,4 +9,4 @@ place = name.lower()
 
 print(place)
 
-print("NUMAAN".lower())
+print("NUMAAN".lower())                 #ek aisa way bhi 
