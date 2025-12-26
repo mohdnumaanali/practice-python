@@ -38,3 +38,20 @@ friends = ["numaan" ," noman ", "numan "]
 friends[2] = "numaan ali "
 
 print(friends)
+
+# finding the length of list like string 
+
+#in string normal 
+
+x = "numaan ali "
+print(len(x))
+
+# now in list 
+
+y = ["numaan" ," noman ", "numan "]
+print(len(y))
+
+#one question = like change list type 
+nums = [1, 2, 3]
+nums[1] = 5
+print(nums)
