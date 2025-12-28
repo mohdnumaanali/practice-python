@@ -26,6 +26,10 @@ y = ["numaan" ," noman ", "numan "]
 
 print(y[0:2])
 
+my_list = [10, 20, 30, 40, 50]
+sub_list = my_list[1:4]
+print(sub_list)
+
 
 # liat methods = append , remove , count , extend , inder , insert , pop , reverse , sort ***
 
@@ -39,6 +43,11 @@ item.append("king ,queen")
 print(item)
 item.append(99)
 print(item)
+
+#example 
+my_list = ['apple', 'banana', 'cherry']
+my_list.append('date')
+print(my_list)
 
 #now like true and false some in the list question 
 
