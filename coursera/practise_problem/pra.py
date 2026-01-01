@@ -28,4 +28,4 @@ while True:
     if (len(data) < 1):
         break
     print(data.decode())
-mysock.close()
+mysock.close()         

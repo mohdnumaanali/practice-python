@@ -21,3 +21,19 @@ try:
 except:
     # This runs if the user types "ten" instead of 10
     print("Error, please enter numeric input")
+
+
+# while True: # This keeps the program running forever...
+#     inp = input("Enter Hours (or type 'done' to quit): ")
+    
+#     if inp == 'done':
+#         break # This is the "Emergency Exit" for the loop
+        
+#     try:
+#         hours = float(inp)
+#         # ... (the rest of your pay logic goes here)
+#         print("Pay calculated!")
+#     except:
+#         print("Invalid input")
+
+# print("All done!")                                                                    #loops ke sath multiple 

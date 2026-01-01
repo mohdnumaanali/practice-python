@@ -1,10 +1,10 @@
-# 1. We DEFINE the function (teaching Python the recipe)
-def print_info():
-    print("Name: Ali")
-    print("Favorite Language: Python")
+# # 1. We DEFINE the function (teaching Python the recipe)
+# def print_info():
+#     print("Name: Ali")
+#     print("Favorite Language: Python")
 
-# 2. We CALL the function (actually cooking the meal)
-print_info()
+# # 2. We CALL the function (actually cooking the meal)
+# print_info()
 
 
 # --- STEP 1: DEFINE OUR TOOLS (The Recipes) ---
