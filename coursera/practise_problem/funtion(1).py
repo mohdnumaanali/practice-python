@@ -1,3 +1,17 @@
+# #,Concept,What you learned
+# 1,def,How to start a function.
+# 2,Calling,How to use the machine you built.
+# 3,Arguments,"Passing data into the machine (n1,n2)."
+# 4,return,Getting data back out (The Delivery Guy).
+# 5,The Exit Rule,return kills the function immediately.
+# 6,Math Logic,"Doing squares, multiplication, etc."
+# 7,Conditionals,Putting if/else inside a function (Computepay).
+# 8,Order,"Why (price, discount) is different from (discount, price)."
+# 9,Defaults,"Setting a standard value like message=""Hello""."
+# 10,Scope,"Why variables inside a function are ""private."""
+
+
+
 # # 1. We DEFINE the function (teaching Python the recipe)
 # def print_info():
 #     print("Name: Ali")

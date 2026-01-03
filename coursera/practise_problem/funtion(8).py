@@ -8,3 +8,5 @@ describe_person("Alice", 25)
 # Wrong Order:
 describe_person(25, "Alice")
 # Output: 25 is Alice years old.
+describe_person("numaan", 19)
+describe_person("asma", )
