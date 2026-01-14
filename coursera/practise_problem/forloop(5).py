@@ -1,10 +1,14 @@
-# prices = [1, 2, 4, 9, 0]
-# total = 0
-# for p in prices:
-#     total += p
-# print(f"Total cost: {total}")
+prices = [1, 2, 4, 9, 0]
+total = 0
+for p in prices:
+    total += p
+    print(f"Total cost: {total}")
 
 total = 0
+
+
+# user input see lena ka code -----------
+
 
 print("Enter 5 numbers:")
 
