@@ -6,3 +6,4 @@ def vote(age):
     
 print(vote(88))
 print(vote(9))
+print(vote(5))
