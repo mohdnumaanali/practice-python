@@ -1,35 +1,11 @@
-import pytest
-class Fruit:
-    def __init__(self, name):
-        self.name = name
-        self.cubed = False
+import re
+def check_web_address(text):
+  pattern =r'^[A-Za-z0-9._+-]+\\.[A-Za-z]+$'
+  result = re.search(pattern, text)
+  return result != None
 
-
-    def cube(self):
-        self.cubed = True
-
-
-class FruitSalad:
-    def __init__(self, *fruit_bowl):
-        self.fruit = fruit_bowl
-        self._cube_fruit()
-
-
-    def _cube_fruit(self):
-        for fruit in self.fruit:
-            fruit.cube()
-
-
-# Arrange
-@pytest.fixture
-def fruit_bowl():
-    return [Fruit("apple"), Fruit("banana")]
-
-
-def test_fruit_salad(fruit_bowl):
-    # Act
-    fruit_salad = FruitSalad(*fruit_bowl)
-
-
-    # Assert
-    assert all(fruit.cubed for fruit in fruit_salad.fruit)
+print(check_web_address("gmail.com")) # True
+print(check_web_address("www@google")) # False
+print(check_web_address("www.Coursera.org")) # True
+print(check_web_address("web-address.com/homepage")) # False
+print(check_web_address("My_Favorite-Blog.US")) # True
