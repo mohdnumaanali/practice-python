@@ -60,3 +60,16 @@ print(is_prime(2))
 # Output: True
 print(is_prime(15))  
 # Output: False
+
+
+#----------------------------------------------------
+print("================================")
+
+# Writing to a file
+with open("my_notes.txt", "w") as file:
+    file.write("I just mastered functions and imports!")
+
+# Reading from a file
+with open("my_notes.txt", "r") as file:
+    content = file.read()
+    print(content)
