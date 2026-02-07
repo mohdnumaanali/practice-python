@@ -60,3 +60,61 @@ for item in mixed_data:
         continue # Move to the next item in the list
 
 print(f"✅ Final Total: {total}")
+
+#6 
+
+try:
+    with open("primary_data.txt", "r") as f:
+        data = f.read()
+except FileNotFoundError:
+    # If the first file is missing, we "nest" another try inside the except
+    try:
+        print("Primary missing, trying backup...")
+        with open("backup_data.txt", "r") as f:
+            data = f.read()
+    except FileNotFoundError:
+        print("Total Failure: No data sources found.")
+
+#7
+
+def set_age(age):
+    if age < 0:
+        # We manually trigger an error because a negative age is impossible
+        raise ValueError("Age cannot be negative!")
+    return f"Age set to {age}"
+
+try:
+    print(set_age(10))      # put - 10 
+except ValueError as e:
+    print(f"Invalid input: {e}")
+
+#8
+
+try:
+    my_data = 12345
+    # This will fail because numbers don't have 'upper'
+    print(my_data.upper()) 
+except AttributeError:
+    print("❌ Error: You are trying to use a text-tool on a number!")
+
+#9
+try:
+    result = 10 / 0
+except Exception as e:
+    # 'e' contains the official error message: "division by zero"
+    print(f"The system reported this specific error: {e}")
+
+#10
+
+file = None
+try:
+    file = open("log.txt", "w")
+    file.write("Updating system logs...")
+    # Imagine an error happens here...
+except IOError:
+    print("Error writing to file.")
+finally:
+    # This part runs even if the write failed OR succeeded
+    if file:
+        file.close()
+        print("🧹 Cleanup: File closed safely.")
