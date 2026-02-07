@@ -54,10 +54,22 @@ try:
 except Exception:
     print("An unknown error occurred.")
 
-# 8 
+# 8 using finally
 try:
     print("Opening connection...")      # try prin instead print
 except:
     print("Error!")
 finally:
     print("Cleanup complete: Connection closed.")
+
+# 9. Catching NameError
+try:
+    print("my_secret_variable")             # remove top inverted comma " "
+except NameError:
+    print("Error: That variable hasn't been defined yet.")
+
+# 10. Catching ImportError
+try:
+    import os      #ghost_library   
+except ImportError:
+    print("Error: That module is not installed on this system.")
