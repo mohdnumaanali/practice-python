@@ -40,3 +40,24 @@ try:
     print(my_list[10])
 except IndexError:
     print("Error: That index is out of range for this list.")
+
+# 6. Catching KeyError
+try:
+    user = {"name": "Numan"}
+    print(user["age"])
+except KeyError:
+    print("Error: That key does not exist in the dictionary.")
+
+# 7. Default Catch (General Exception)
+try:
+    x = "unknown_variable "+ 5
+except Exception:
+    print("An unknown error occurred.")
+
+# 8 
+try:
+    print("Opening connection...")      # try prin instead print
+except:
+    print("Error!")
+finally:
+    print("Cleanup complete: Connection closed.")
