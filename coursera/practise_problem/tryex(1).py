@@ -21,3 +21,22 @@ try:
     age = int(input("Enter your age: "))
 except ValueError:
     print("Error: Please enter a whole number (e.g., 25).")
+
+# 3. Catching FileNotFoundError
+try:
+    with open("test.txt", "r") as f:
+        print(f.read())
+except FileNotFoundError:
+    print("Error: The file 'test.txt' was not found.")        
+
+# 4. Catching TypeError
+try:
+    total = "Price: " + 10  # Cannot add string and int
+except TypeError:
+    print("Error: You can only join strings to other strings.")
+# 5. Catching IndexError
+try:
+    my_list = [1, 2, 3]
+    print(my_list[10])
+except IndexError:
+    print("Error: That index is out of range for this list.")
