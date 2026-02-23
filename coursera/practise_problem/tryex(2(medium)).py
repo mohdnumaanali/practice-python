@@ -1,4 +1,4 @@
-'''
+
 # 1. Handling Multiple Specific Exceptions
 try:
     val = int(input("Enter a divisor: "))
@@ -30,7 +30,7 @@ def safe_get_first_letter(word):
         return word[0]
     except (TypeError, IndexError):
         return "N/A" # Returns a default value instead of crashing
-'''
+
 # 5. List Processing with try/except
 mixed_data = ["10", "apple", "20", "orange"]
 total = 0

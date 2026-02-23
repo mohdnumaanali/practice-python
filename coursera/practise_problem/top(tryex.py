@@ -94,7 +94,6 @@ final_list = calculate_sqrt(test_data)
 print(f"Final valid results: {final_list}")
 
 #3
-
 import os
 
 def verify_and_write(folder_name, filename, data):
